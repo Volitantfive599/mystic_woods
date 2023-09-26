@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccpqenj3pqw0g"]
+
+[ext_resource type="Script" path="res://heartbar.gd" id="1_bdebb"]
+[ext_resource type="Texture2D" uid="uid://cah58ibr0g5pl" path="res://mystic_woods_art/sprites/objects/objects.png" id="1_kyu1i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_elyye"]
+atlas = ExtResource("1_kyu1i")
+region = Rect2(131, 40, 9, 9)
+
+[node name="Heartbar" type="HBoxContainer"]
+offset_right = 356.0
+offset_bottom = 68.0
+script = ExtResource("1_bdebb")
+
+[node name="Heart1" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_elyye")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Heart2" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_elyye")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Heart3" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_elyye")
+expand_mode = 3
+stretch_mode = 4

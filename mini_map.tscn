@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://bwcprnnp4jotv"]
+
+[ext_resource type="Script" path="res://mini_map.gd" id="1_aiq1m"]
+[ext_resource type="Texture2D" uid="uid://cq7bl56536exf" path="res://mystic_woods_art/assets/panel_woodDetail_blank.png" id="1_nbh8f"]
+[ext_resource type="Texture2D" uid="uid://bikdfyvvw5oag" path="res://mystic_woods_art/assets/pattern_blueprintPaper.png" id="2_mntgl"]
+[ext_resource type="Texture2D" uid="uid://bn1rrxajfedmo" path="res://mystic_woods_art/assets/minimapIcon_arrowA.png" id="3_plhs5"]
+[ext_resource type="Texture2D" uid="uid://76t51rghfsgj" path="res://mystic_woods_art/assets/minimapIcon_exclamationYellow.png" id="4_7wuc5"]
+[ext_resource type="Texture2D" uid="uid://bm30ksnske3e1" path="res://mystic_woods_art/assets/minimapIcon_jewelRed.png" id="5_1pakm"]
+
+[node name="MiniMap" type="MarginContainer"]
+offset_right = 200.0
+offset_bottom = 200.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_aiq1m")
+
+[node name="Frame" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_nbh8f")
+patch_margin_left = 64
+patch_margin_top = 64
+patch_margin_right = 64
+patch_margin_bottom = 64
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Grid" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_mntgl")
+stretch_mode = 1
+
+[node name="PlayerMarker" type="Sprite2D" parent="MarginContainer/Grid"]
+position = Vector2(100, 100)
+texture = ExtResource("3_plhs5")
+
+[node name="AlertMarker" type="Sprite2D" parent="MarginContainer/Grid"]
+visible = false
+position = Vector2(49, 47)
+texture = ExtResource("4_7wuc5")
+
+[node name="MobMarker" type="Sprite2D" parent="MarginContainer/Grid"]
+visible = false
+position = Vector2(113, 33)
+texture = ExtResource("5_1pakm")

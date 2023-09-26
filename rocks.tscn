@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cday6huiuwdcf"]
+
+[ext_resource type="Texture2D" uid="uid://cy4x5odlurlg" path="res://mystic_woods_art/sprites/tilesets/plains.png" id="1_cunv4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kct7b"]
+radius = 20.0
+height = 44.0
+
+[node name="Rocks" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("1_cunv4")
+region_enabled = true
+region_rect = Rect2(15, 129, 49, 47)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
+position = Vector2(0, -1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_kct7b")

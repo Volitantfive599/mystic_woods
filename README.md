@@ -15,7 +15,7 @@ This project was originally created earlier in my development journey and is bei
 Prototype / archived project being documented for portfolio purposes.
 
 ## Screenshots
-![Image 1-17-26 at 1 48 AM](https://github.com/user-attachments/assets/40fe971f-4da1-4f67-acfd-2fa5a6c977a7)
+<img width="926" height="519" alt="mystic-woods-screenshot" src="https://github.com/user-attachments/assets/d5b91c0d-d499-4a08-94dc-739bfccc861e" />
 
 
 ## How to Run

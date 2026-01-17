@@ -15,7 +15,8 @@ This project was originally created earlier in my development journey and is bei
 Prototype / archived project being documented for portfolio purposes.
 
 ## Screenshots
-Coming soon.
+![Image 1-17-26 at 1 48 AM](https://github.com/user-attachments/assets/40fe971f-4da1-4f67-acfd-2fa5a6c977a7)
+
 
 ## How to Run
 Instructions coming soon.

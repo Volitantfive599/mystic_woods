@@ -19,5 +19,15 @@ Prototype / archived project being documented for portfolio purposes.
 
 
 ## How to Run
-Instructions coming soon.
 
+### Requirements
+- Godot Engine (version X.X)
+
+### Steps
+1. Clone the repository
+2. Import the project into Godot
+3. Run the project using ▶ located in the top right corner
+
+### Controls
+- **WASD / Arrow Keys** — Move
+- **Shift** — Attack
